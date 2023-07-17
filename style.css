@@ -1,0 +1,211 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    /* font-family: 'Merriweather', serif; */
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    padding: 0 4rem;
+}
+/* header section start  */
+header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    height: 10%;
+    /* border: 2px solid red; */
+    
+}
+.nav-links ul{ 
+    list-style:none ;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.nav-links ul li a{ 
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+}
+.nav-links ul i{ 
+    font-size: 1.5rem;
+}
+/* header section end  */
+/* Banner section start  */
+.banner-container{ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    flex: 1;
+    height: 80%;
+    padding: 2rem;
+    /* border: 2px solid darkturquoise; */
+}
+.banner-doc h1 { 
+    font-size: 42px;
+    font-family: 'Merriweather', serif;
+    color: rgb(43, 36, 36);
+
+}
+.banner-doc p{ 
+ color: gray;
+ font-weight: 400;
+}
+.banner-img{ 
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+.banner-btn{
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color:rgb(235, 8, 235);
+    color: aliceblue;
+    font-style: 1rem;
+    border-radius: 300px;
+    font-weight: 700;
+    border: none;
+}
+.banner-ads{ 
+  
+    margin: 2rem;
+
+    
+}
+.banner-ads-img{ 
+    gap: 3rem;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        height: 10%;
+        border-top: 2px solid grey;
+        border-bottom:2px solid grey ;
+        padding: 2rem;
+}
+/* Banner section end  */
+/* card section start */
+.card-container{ 
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.card-title{ 
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Merriweather', serif;
+
+}
+.card-items{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+  text-align: center;
+}
+.card-1{
+    color: rgb(26, 10, 10);
+    background-color:#EEEEEE;
+    border-radius:10px ;
+    padding: 1rem;
+ 
+}
+.card-1 img{ 
+    width: 90%;
+    margin: 0 auto;
+}
+.card-doc{ 
+   text-align: left;
+   margin-left: 1rem;
+}
+.see-more { 
+    color: blueviolet;
+    text-align:right ;
+    padding: 1.5rem;
+   
+}
+
+/* card section end */
+/* Featured section start here  */
+.featured-container{ 
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    align-items: center;
+    padding: 2rem;
+
+}
+.featured-btn{ 
+    padding: 1rem 2rem;
+    background-color: hotpink ;
+    color: aliceblue;
+    font-weight: bolder;
+    border: none;
+    margin: 2rem 0;
+}
+
+/* Featured section end here  */
+/* footer start here  */
+footer{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: midnightblue;
+    color: aliceblue;
+    padding: 3rem;
+    margin: 2rem 0;
+}
+.ficon{ 
+    padding: .5rem;
+    margin: .5rem 0;
+    font-size: 24px;
+
+}
+/* footer end here  */
+/* responsive style start here  */
+@media  (max-width:768px) {
+    header{ 
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links{ 
+        visibility: hidden;
+    }
+    .banner-container{ 
+        flex-direction: column-reverse;
+        margin-top: 2rem;
+    }
+    .banner-doc{ 
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .banner-ads-img{ 
+        flex-direction: column;
+    }
+    .card-items{ 
+        grid-template-columns: repeat(1,1fr);
+    }
+    .see-more{ 
+        text-align: center;
+        
+    }
+    .featured-container{ 
+        flex-direction: column;
+        text-align: center;
+    }
+    footer{ 
+        max-width: auto;
+    }
+   
+    
+    
+}
+/* responsive style end here  */
